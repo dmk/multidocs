@@ -1,0 +1,15 @@
+<div id="swagger-ui"></div>
+
+<script>
+  window.onload = function () {
+    const ui = SwaggerUIBundle({
+      url: "<%= data.apis[current_path].url %>",
+      dom_id: '#swagger-ui',
+      deepLinking: true,
+      presets: [SwaggerUIBundle.presets.apis],
+      plugins: [SwaggerUIBundle.plugins.DownloadUrl],
+      layout: "BaseLayout"
+    })
+    window.ui = ui
+  }
+</script>

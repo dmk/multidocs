@@ -1,0 +1,17 @@
+<nav>
+  <div class="nav-container">
+    <h1 class="brand">
+      <a href="/">API Docs</a>
+    </h1>
+
+    <span>
+      <% data.apis.each do |path, api| %>
+        <a href="/<%= path %>"
+          <% if path == current_path %>
+            class="active"
+          <% end %>
+        ><%= api.title %></a>
+      <% end %>
+    </span>
+  </div>
+</nav>

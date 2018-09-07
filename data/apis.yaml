@@ -1,3 +1,6 @@
-petstore/v2:
-  title: Petstore
-  url: https://petstore.swagger.io/v2/swagger.json
+barong/api/v1:
+  title: Barong Member APIv1
+  url: http://auth.wb.local/api/v1/swagger_doc
+peatio/api/v2:
+  title: Peatio Member APIv2
+  url: http://api.wb.local/api/v2/swagger.json
